@@ -4,14 +4,14 @@
     "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\EFC.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\EFC.Tests.csproj": {
+    "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.API\\EFC.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\EFC.Tests.csproj",
-        "projectName": "EFC.Tests",
-        "projectPath": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\EFC.Tests.csproj",
+        "projectUniqueName": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.API\\EFC.API.csproj",
+        "projectName": "EFC.API",
+        "projectPath": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.API\\EFC.API.csproj",
         "packagesPath": "C:\\Users\\elio_\\.nuget\\packages\\",
-        "outputPath": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\obj\\",
+        "outputPath": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,15 +43,122 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\EFC.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\EFC.Tests.csproj",
+        "projectName": "EFC.Tests",
+        "projectPath": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\EFC.Tests.csproj",
+        "packagesPath": "C:\\Users\\elio_\\.nuget\\packages\\",
+        "outputPath": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\elio_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.API\\EFC.API.csproj": {
+                "projectPath": "C:\\Elio\\Development\\Projects\\MockEFCore\\EFC.API\\EFC.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.3.2, )"
+              "version": "[17.4.0, )"
+            },
+            "MockQueryable.Moq": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Moq.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0.2, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[3.2.0, )"
+            },
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
             },
             "xunit": {
               "target": "Package",
