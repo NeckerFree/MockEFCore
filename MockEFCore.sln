@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC.API", "EFC.API\EFC.API.csproj", "{6C9B441A-66AA-4584-910F-8C84419A5712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC.Tests", "EFC.Tests\EFC.Tests.csproj", "{7DB15E9B-A162-43AE-910C-4F9D44294620}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C9B441A-66AA-4584-910F-8C84419A5712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9B441A-66AA-4584-910F-8C84419A5712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9B441A-66AA-4584-910F-8C84419A5712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9B441A-66AA-4584-910F-8C84419A5712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB15E9B-A162-43AE-910C-4F9D44294620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB15E9B-A162-43AE-910C-4F9D44294620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB15E9B-A162-43AE-910C-4F9D44294620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB15E9B-A162-43AE-910C-4F9D44294620}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21E6C570-B2D5-474B-B5FC-0D5E3AAC93AB}
+	EndGlobalSection
+EndGlobal
